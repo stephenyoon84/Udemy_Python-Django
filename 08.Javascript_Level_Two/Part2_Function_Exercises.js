@@ -25,8 +25,15 @@
 
 function sleepIn(weekday, vacation) {
     //Code Goes Here
+    if (weekday === false){
+      return true;
+    } else {
+      return vacation;
+    }
 }
-
+// function sleepIn(weekday, vacation) {
+//     return (!weekday || vacation);
+// }
 
 //
 // PROBLEM 2: MONKEY TROUBLE
@@ -43,8 +50,12 @@ function sleepIn(weekday, vacation) {
 
 function monkeyTrouble(aSmile, bSmile) {
     //Code Goes Here
+    return (aSmile && bSmile) || (!aSmile && !bSmile)
 }
 
+// function monkeyTrouble(aSmile, bSmile) {
+//     return (aSmile && bSmile) || (!aSmile && !bSmile);
+// }
 
 //
 // PROBLEM 3: STRING TIMES
@@ -60,7 +71,22 @@ function monkeyTrouble(aSmile, bSmile) {
 
 function stringTimes(str, n) {
     //Code Goes Here
+    result = ""
+    for (i = 0; i < n; i++){
+      result += str
+    }
+    return result;
 }
+
+// function stringTimes(str, n) {
+//     var returnStr = '';
+//     var i = 0;
+//     while (i < n) {
+//         returnStr += str;
+//         i++;
+//     }
+//     return returnStr;
+// }
 
 // PROBLEM 4: LUCKY SUM
 
@@ -77,8 +103,31 @@ function stringTimes(str, n) {
 // luckySum(1, 13, 3) → 1
 
 function luckySum(a, b, c){
-
   //Code Goes Here
+  if(a == 13){
+    return 0
+  }
+  if(b == 13){
+    return a
+  }
+  if(c == 13){
+    return a + b
+  }
+  return a + b + c
+}
+
+function luckySum(a, b, c){
+
+  if(a == 13){
+    return 0
+  }
+  if(b == 13){
+    return a
+  }
+  if(c == 13){
+    return a + b
+  }
+  return a + b + c
 }
 
 // PROBLEM 5:
@@ -97,7 +146,31 @@ function luckySum(a, b, c){
 
 function caught_speeding(speed, is_birthday){
   //Code Goes Here
+  if (is_birthday) {
+    speed -= 5
+  }
+  if (speed > 80) {
+    return 2;
+  }else if (speed > 60) {
+    return 1;
+  }else {
+    return 0
+  }
 }
+
+// function caught_speeding(speed, is_birthday){
+//   if(is_birthday){
+//     speed -= 5
+//   }
+//   if(speed <= 60){
+//       return 0
+//   }
+//   // Optional: (60 < speed && speed <=80)
+//   if(60 < speed <= 80){
+//     return 1
+//   }
+//   return 2
+// }
 
 
 // BONUS: MAKE BRICKS
