@@ -188,7 +188,7 @@ function caught_speeding(speed, is_birthday){
 
 function makeBricks(small, big, goal){
   //Code Goes Here
-  return (small * 1 + big * 5) >= goal;
+  return goal%5 >= 0 && goal%5 - small <= 0 && small + 5*big >= goal;
 }
 
 // function makeBricks(small, big, goal){
