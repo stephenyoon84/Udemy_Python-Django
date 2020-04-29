@@ -37,7 +37,7 @@ for (j = 0; j < 5; j++){
 // While Loop
 var num = 1;
 while (num < 26){
-  if (num % 2 != 0) {
+  if (num % 2 !== 0) {
     console.log(num);
   }
   num++;
@@ -46,7 +46,7 @@ while (num < 26){
 // METHOD TWO
 // For Loop
 for (i = 1; i < 26; i++){
-  if (i % 2 != 0) {
+  if (i % 2 !== 0) {
     console.log(i);
   }
 }
