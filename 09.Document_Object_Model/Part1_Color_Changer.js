@@ -5,7 +5,7 @@
 
 // Grab the Header with h1
 var header = document.querySelector("h1")
-var pTag = document.querySelector("p")
+var pTag = document.querySelectorAll("p")
 // Then you can interface with the object.
 
 // Interface with the style.
@@ -35,7 +35,9 @@ function changeHeaderColor(){
 
 function changePTagColor(){
   colorInput = getRandomColor();
-  pTag.style.color = colorInput;
+  for(p of pTag){
+    p.style.color = colorInput;
+  }
 }
 
 // Now perform the action over intervals (milliseocnds):
