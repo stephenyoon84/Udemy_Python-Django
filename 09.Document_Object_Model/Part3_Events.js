@@ -23,7 +23,7 @@ headTwo.addEventListener("click",function(){
 })
 
 // Double Click
-headThree.addEventListener("db",function(){
+headThree.addEventListener("dblclick",function(){
   headThree.textContent = "Double Clicked!";
   headThree.style.color = 'red';
 })
