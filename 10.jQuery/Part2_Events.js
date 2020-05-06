@@ -26,13 +26,14 @@ $('h3').click(function() {
 // KEYPRESS ////
 ///////////////
 // Using This with jQuery
-$('input').eq(0).keypress(function() {
-  $('h3').toggleClass("turnRed");
-})
+// $('input').eq(0).keypress(function() {
+//   $('h3').toggleClass("turnRed");
+// })
 
 // We can use this event object, that has a ton of information!
 $('input').eq(0).keypress(function(event) {
   console.log(event.key+" pressed");
+  console.log(event.which)
 })
 
 // Each Keyboard Key has a Keycode, for example Enter is 13
