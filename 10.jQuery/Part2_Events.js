@@ -32,7 +32,7 @@ $('input').eq(0).keypress(function() {
 
 // We can use this event object, that has a ton of information!
 $('input').eq(0).keypress(function(event) {
-  console.log(event);
+  console.log(event.key+" pressed");
 })
 
 // Each Keyboard Key has a Keycode, for example Enter is 13
