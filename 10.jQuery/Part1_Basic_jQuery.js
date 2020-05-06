@@ -12,6 +12,7 @@ var x = $('h1');
 // You can easily edit the css properties:
 x.css("color",'red');
 x.css("background","blue");
+x.text('Hi');
 
 // Multiple CSS properties at once:
 var newCSS = {
