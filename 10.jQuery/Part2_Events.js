@@ -48,7 +48,7 @@ $('input').eq(0).keypress(function(event) {
 
 // on() basically works like addEventListener()
 $('h1').on("dblclick",function() {
-  $('h1').addClass('turnBlue');
+  $('h1').toggleClass('turnBlue');
 })
 
 $('li').on('mouseenter',function() {
