@@ -33,29 +33,29 @@
 # Basic Arithmetic
 # Addition
 2+1
-
+# 3
 # Subtraction
 2-1
-
+# 1
 # Multiplication
 2*2
-
+# 4
 
 # Division
 3/2
-
+# 1.5
 # Powers
 2**3
-
+# 8
 # Can also do roots this way
 4**0.5
-
+# 2.0
 # Order of Operations followed in Python
 2 + 10 * 10 + 3
-
+# 105
 # Can use parenthesis to specify orders
 (2+10) * (10+3)
-
+# 156
 
 ## Variable Assignments
 #
@@ -73,7 +73,7 @@ a = 5
 
 # Adding the objects
 a+a
-
+# 10
 # What happens on reassignment? Will Python let us write it over?
 
 # Reassignment
@@ -81,20 +81,20 @@ a = 10
 
 # Check
 a
-
+# 10
 
 # Yes! Python allows you to write over assigned variable names. We can also use
 # the variables themselves when doing the reassignment. Here is an example of what I mean:
 
 # Check
 a
-
+# 10
 # Use A to redefine A
 a = a + a
 
 # Check
 a
-
+# 20
 
 # The names you use when creating these labels need to follow a few rules:
 #
@@ -115,7 +115,7 @@ my_taxes = my_income*tax_rate
 
 # Show my taxes!
 my_taxes
-
+# 10.0
 
 # So what have we learned? We learned some of the basics of numbers in Python.
 # We also learned how to do arithmetic and use Python as a basic calculator.
