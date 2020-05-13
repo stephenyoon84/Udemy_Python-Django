@@ -14,17 +14,17 @@ s = 'django'
 
 # Use indexing to print out the following:
 # 'd'
-
+print (s[0])
 # 'o'
-
+print(s[-1])
 # 'djan'
-
+print(s[:-2])
 # 'jan'
-
+print(s[1:-2])
 # 'go'
-
+print(s[4:])
 # Bonus: Use indexing to reverse the string
-
+print(s[::-1])
 
 ###############
 ## Problem 2 ##
