@@ -31,13 +31,13 @@
 
 # AND
 (1 > 2) and (2 < 3)
-
+# False
 # OR
 (1 > 2) or (2 < 3)
-
+# True
 # Multiple logical operators
 (1 == 2) or (2 == 3) or (4 == 4)
-
+# True
 ##################################
 ### if,elif, else Statements #####
 ##################################
