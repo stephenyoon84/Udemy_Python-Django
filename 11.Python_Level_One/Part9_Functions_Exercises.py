@@ -63,20 +63,23 @@ stringBits('Heeololeo')
 # end_other('abc', 'abXabc') → True
 
 
-# def end_other(a, b):
-#   # CODE GOES HERE
-  
+def end_other(a, b):
+  # CODE GOES HERE
+  print(a.lower() in b.lower() or b.lower() in a.lower())
+end_other('Hiabc', 'abc')
+end_other('AbC', 'HiaBc')
+end_other('abc', 'abXabc')  
 
-# #####################
-# ## -- PROBLEM 4 -- ##
-# #####################
+#####################
+## -- PROBLEM 4 -- ##
+#####################
 
-# # Given a string, return a string where for every char in the original,
-# # there are two chars.
+# Given a string, return a string where for every char in the original,
+# there are two chars.
 
-# # doubleChar('The') → 'TThhee'
-# # doubleChar('AAbb') → 'AAAAbbbb'
-# # doubleChar('Hi-There') → 'HHii--TThheerree'
+# doubleChar('The') → 'TThhee'
+# doubleChar('AAbb') → 'AAAAbbbb'
+# doubleChar('Hi-There') → 'HHii--TThheerree'
 
 # def doubleChar(str):
 #   # CODE GOES HERE
