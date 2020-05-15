@@ -115,9 +115,16 @@ doubleChar('Hi-There')
 
 def no_teen_sum(a, b, c):
   # CODE GOES HERE
+  print(fix_teen(a)+fix_teen(b)+fix_teen(c))
+
 def fix_teen(n):
   # CODE GOES HERE
-
+  if n in [13, 14, 17, 18, 19]:
+    return 0
+  return n
+no_teen_sum(1, 2, 3)
+no_teen_sum(2, 13, 1)
+no_teen_sum(2, 1, 14)
 #####################
 ## -- PROBLEM 6 -- ##
 #####################
@@ -128,7 +135,7 @@ def fix_teen(n):
 #
 # count_evens([2, 1, 2, 3, 4]) → 3
 # count_evens([2, 2, 0]) → 3
-# count_evens([1, 3, 5]) → 0
+# # count_evens([1, 3, 5]) → 0
 
-def count_evens(nums):
-  # CODE GOES HERE
+# def count_evens(nums):
+#   # CODE GOES HERE
