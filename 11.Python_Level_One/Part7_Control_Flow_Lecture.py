@@ -64,7 +64,7 @@ if 1 < 2:
     print('first')
 else:
     print('last')
-
+# first
 ###
 ###
 
@@ -72,7 +72,7 @@ if 1 > 2:
     print('first')
 else:
     print('last')
-
+# last
 
 # To add more conditions (like else if) you just use a single phrase "elif"
 
@@ -82,7 +82,7 @@ elif 3 == 3:
     print('middle')
 else:
     print('Last')
-
+# middle
 ################################################################################
 ####################-----------------------------###############################
 ####################-----------LOOPS-------------###############################
