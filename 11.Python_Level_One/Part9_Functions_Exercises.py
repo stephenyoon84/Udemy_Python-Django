@@ -135,7 +135,15 @@ no_teen_sum(2, 1, 14)
 #
 # count_evens([2, 1, 2, 3, 4]) → 3
 # count_evens([2, 2, 0]) → 3
-# # count_evens([1, 3, 5]) → 0
+# count_evens([1, 3, 5]) → 0
 
-# def count_evens(nums):
-#   # CODE GOES HERE
+def count_evens(nums):
+  # CODE GOES HERE
+  count = 0
+  for i in nums:
+    if i % 2 == 0:
+      count += 1
+  print(count)
+count_evens([2, 1, 2, 3, 4])
+count_evens([2, 2, 0])
+count_evens([1, 3, 5])
