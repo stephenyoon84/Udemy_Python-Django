@@ -41,7 +41,10 @@ arrayCheck([1, 1, 2, 1, 2, 3])
 
 def stringBits(str):
   # CODE GOES HERE
-
+  print(str[::2])
+stringBits('Hello')
+stringBits('Hi')
+stringBits('Heeololeo')
 
 #####################
 ## -- PROBLEM 3 -- ##
@@ -60,62 +63,62 @@ def stringBits(str):
 # end_other('abc', 'abXabc') → True
 
 
-def end_other(a, b):
-  # CODE GOES HERE
+# def end_other(a, b):
+#   # CODE GOES HERE
   
 
-#####################
-## -- PROBLEM 4 -- ##
-#####################
+# #####################
+# ## -- PROBLEM 4 -- ##
+# #####################
 
-# Given a string, return a string where for every char in the original,
-# there are two chars.
+# # Given a string, return a string where for every char in the original,
+# # there are two chars.
 
-# doubleChar('The') → 'TThhee'
-# doubleChar('AAbb') → 'AAAAbbbb'
-# doubleChar('Hi-There') → 'HHii--TThheerree'
+# # doubleChar('The') → 'TThhee'
+# # doubleChar('AAbb') → 'AAAAbbbb'
+# # doubleChar('Hi-There') → 'HHii--TThheerree'
 
-def doubleChar(str):
-  # CODE GOES HERE
+# def doubleChar(str):
+#   # CODE GOES HERE
 
 
-#####################
-## -- PROBLEM 5 -- ##
-#####################
+# #####################
+# ## -- PROBLEM 5 -- ##
+# #####################
 
-# Read this problem statement carefully!
+# # Read this problem statement carefully!
 
-# Given 3 int values, a b c, return their sum. However, if any of the values is a
-# teen -- in the range 13-19 inclusive -- then that value counts as 0, except 15
-# and 16 do not count as a teens. Write a separate helper "def fix_teen(n):"that
-# takes in an int value and returns that value fixed for the teen rule.
-#
-# In this way, you avoid repeating the teen code 3 times (i.e. "decomposition").
-# Define the helper below and at the same indent level as the main no_teen_sum().
-# Again, you will have two functions for this problem!
-#
-# Examples:
-#
-# no_teen_sum(1, 2, 3) → 6
-# no_teen_sum(2, 13, 1) → 3
-# no_teen_sum(2, 1, 14) → 3
+# # Given 3 int values, a b c, return their sum. However, if any of the values is a
+# # teen -- in the range 13-19 inclusive -- then that value counts as 0, except 15
+# # and 16 do not count as a teens. Write a separate helper "def fix_teen(n):"that
+# # takes in an int value and returns that value fixed for the teen rule.
+# #
+# # In this way, you avoid repeating the teen code 3 times (i.e. "decomposition").
+# # Define the helper below and at the same indent level as the main no_teen_sum().
+# # Again, you will have two functions for this problem!
+# #
+# # Examples:
+# #
+# # no_teen_sum(1, 2, 3) → 6
+# # no_teen_sum(2, 13, 1) → 3
+# # no_teen_sum(2, 1, 14) → 3
 
-def no_teen_sum(a, b, c):
-  # CODE GOES HERE
-def fix_teen(n):
-  # CODE GOES HERE
+# def no_teen_sum(a, b, c):
+#   # CODE GOES HERE
+# def fix_teen(n):
+#   # CODE GOES HERE
 
-#####################
-## -- PROBLEM 6 -- ##
-#####################
+# #####################
+# ## -- PROBLEM 6 -- ##
+# #####################
 
-# Return the number of even integers in the given array.
-#
-# Examples:
-#
-# count_evens([2, 1, 2, 3, 4]) → 3
-# count_evens([2, 2, 0]) → 3
-# count_evens([1, 3, 5]) → 0
+# # Return the number of even integers in the given array.
+# #
+# # Examples:
+# #
+# # count_evens([2, 1, 2, 3, 4]) → 3
+# # count_evens([2, 2, 0]) → 3
+# # count_evens([1, 3, 5]) → 0
 
-def count_evens(nums):
-  # CODE GOES HERE
+# def count_evens(nums):
+#   # CODE GOES HERE
