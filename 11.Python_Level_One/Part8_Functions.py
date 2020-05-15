@@ -182,17 +182,17 @@ print(list(evens))
 # useful common ones (this may be review)
 
 st = 'hello my name is Sam'
-st.lower()
-st.upper()
-st.split()
+print(st.lower())
+print(st.upper())
+print(st.split())
 
 tweet = 'Go Sports! #Sports'
 tweet.split('#')
 tweet.split('#')[1]
 
 d = {'k1':1,'k2':2}
-d.keys()
-d.items()
+print(d.keys())
+print(d.items())
 
 lst = [1,2,3]
 x = lst.pop()
