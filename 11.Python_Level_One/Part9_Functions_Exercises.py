@@ -22,8 +22,10 @@
 
 def arrayCheck(nums):
     # CODE GOES HERE
-
-
+    print(1 in nums and 2 in nums and 3 in nums)
+arrayCheck([1, 1, 2, 3, 1])
+arrayCheck([1, 1, 2, 4, 1])
+arrayCheck([1, 1, 2, 1, 2, 3])
 #####################
 ## -- PROBLEM 2 -- ##
 #####################
@@ -60,6 +62,7 @@ def stringBits(str):
 
 def end_other(a, b):
   # CODE GOES HERE
+  
 
 #####################
 ## -- PROBLEM 4 -- ##
