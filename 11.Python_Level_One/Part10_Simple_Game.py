@@ -34,9 +34,16 @@ random.shuffle(digits)
 # Think about how you will compare the input to the random number, what format
 # should they be in? Maybe some sort of sequence? Watch the Lecture video for more hints!
 
+def generate_three_digits():
+    digits = list(range(10))
+    random.shuffle(digits)
+    return digits[:3]
+
 
 def game_start():
     print("Welcome Code Breaker! Let's see if you can guess my 3 digit number!")
+    target = generate_three_digits()
     print("Code has been generated, please guess a 3 digit number.")
+    print(target)
 
 game_start()
