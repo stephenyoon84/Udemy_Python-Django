@@ -35,16 +35,48 @@ random.shuffle(digits)
 # should they be in? Maybe some sort of sequence? Watch the Lecture video for more hints!
 
 def generate_three_digits():
-    digits = list(range(10))
+    digits = [str(x) for x in range(10)]
     random.shuffle(digits)
     return digits[:3]
 
 def get_guess():
-    guess = input("What is your guess?")
-    return convert_num_to_list(guess)
+    return list(input("What is your guess?"))
 
-def convert_num_to_list(num):
-    return [int(x) for x in str(num)]
+def generate_clues(target, guess):
+    '''
+    compares the target and guess
+    '''
+    if guess == target:
+        return "CODE CRACKED"
+    clues = []
+
+    for index, number in enumerate(guess):
+        if number == target[index]:
+            clues.append("Match")
+        elif number in target:
+            clues.append("Close")
+    if clues == []:
+        return ["Nope"]
+    else:
+        return clues
+
+print("Welcome Code Breaker! Let's see if you can guess my 3 digit number!")
+target = generate_three_digits()
+print("Code has been generated, please guess a 3 digit number.")
+
+clueReport = []
+
+while clueReport != "CODE CRACKED":
+    guess = get_guess()
+
+    clueReport = generate_clues(guess, target)
+    print("Here is the result of your guess:")
+    for clue in clueReport:
+        print(clue)
+
+# def convert_num_to_list(num):
+    # '''don't need this helper'''
+#     return [int(x) for x in str(num)]
 
 # def check_target(tar, list):
 #     if (tar[0] == list[0] and tar[1] == list[1] and tar[2] == list[2]):
