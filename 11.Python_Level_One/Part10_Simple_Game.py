@@ -25,11 +25,17 @@
 import random
 digits = list(range(10))
 random.shuffle(digits)
-print(digits[:3])
+# print(digits[:3])
 
 # Another hint:
-guess = input("What is your guess? ")
-print(guess)
+# guess = input("What is your guess? ")
+# print(guess)
 
 # Think about how you will compare the input to the random number, what format
 # should they be in? Maybe some sort of sequence? Watch the Lecture video for more hints!
+
+
+def game_start():
+    print("Welcome!! Let's start a game!!")
+
+game_start()
