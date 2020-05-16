@@ -39,11 +39,21 @@ def generate_three_digits():
     random.shuffle(digits)
     return digits[:3]
 
+def get_guess():
+    return input("What is your guess?")
+
+def convert_num_to_list(num):
+    return [int(x) for x in str(num)]
+
+def check_target(tar, list):
+    
 
 def game_start():
     print("Welcome Code Breaker! Let's see if you can guess my 3 digit number!")
     target = generate_three_digits()
     print("Code has been generated, please guess a 3 digit number.")
     print(target)
+    guess = get_guess()
+    print(convert_num_to_list(guess))
 
 game_start()
