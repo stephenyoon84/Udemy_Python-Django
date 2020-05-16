@@ -40,20 +40,30 @@ def generate_three_digits():
     return digits[:3]
 
 def get_guess():
-    return input("What is your guess?")
+    guess = input("What is your guess?")
+    return convert_num_to_list(guess)
 
 def convert_num_to_list(num):
     return [int(x) for x in str(num)]
 
-def check_target(tar, list):
-    
+# def check_target(tar, list):
+#     if (tar[0] == list[0] and tar[1] == list[1] and tar[2] == list[2]):
+#         return True
+#     return False
 
-def game_start():
-    print("Welcome Code Breaker! Let's see if you can guess my 3 digit number!")
-    target = generate_three_digits()
-    print("Code has been generated, please guess a 3 digit number.")
-    print(target)
-    guess = get_guess()
-    print(convert_num_to_list(guess))
+# def game_start():
+#     print("Welcome Code Breaker! Let's see if you can guess my 3 digit number!")
+#     target = generate_three_digits()
+#     print("Code has been generated, please guess a 3 digit number.")
+#     print(target)
+#     guess = get_guess()
+#     print(guess)
+#     while (target[0] == guess[0] and target[1] == guess[1] and target[2] == guess[2]):
+#         if (guess[0] in target or guess[1] in target or guess[2] in target):
+#             print("Close")
+#         else:
+#             print("Nope")
 
-game_start()
+
+
+# game_start()
