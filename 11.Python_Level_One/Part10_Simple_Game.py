@@ -36,6 +36,7 @@ random.shuffle(digits)
 
 
 def game_start():
-    print("Welcome!! Let's start a game!!")
+    print("Welcome Code Breaker! Let's see if you can guess my 3 digit number!")
+    print("Code has been generated, please guess a 3 digit number.")
 
 game_start()
