@@ -162,16 +162,16 @@ print('x is still', x)
 
 x = 50
 
-def func():
+def func1():
     global x
     print('This function is now using the global x!')
     print('Because of global x is: ', x)
     x = 2
-    print('Ran func(), changed global x to', x)
+    print('Ran func1(), changed global x to', x)
 
-print('Before calling func(), x is: ', x)
-func()
-print('Value of x (outside of func()) is: ', x)
+print('Before calling func1(), x is: ', x)
+func1()
+print('Value of x (outside of func1()) is: ', x)
 
 
 # The global statement is used to declare that x is a global variable - hence,
