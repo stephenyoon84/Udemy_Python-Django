@@ -74,6 +74,7 @@ while clueReport != "CODE CRACKED":
     for clue in clueReport:
         print(clue)
 
+# Done
 # def convert_num_to_list(num):
     # '''don't need this helper'''
 #     return [int(x) for x in str(num)]
