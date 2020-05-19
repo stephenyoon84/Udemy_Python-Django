@@ -105,7 +105,7 @@ print (name)
 # These are the built-in function names in Python (don't overwrite these!)
 # You will know if you've typed one based on its color!
 
-len
+print(len('Hello'))
 
 
 # Local Variables
