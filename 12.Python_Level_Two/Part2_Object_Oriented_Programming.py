@@ -142,7 +142,7 @@ frank.breed
 # breed,name, or other attributes will always be mammals.
 # We apply this logic in the following manner:
 
-class Dog():
+class Dog1():
 
     # Class Object Attribute
     species = 'mammal'
@@ -151,7 +151,7 @@ class Dog():
         self.breed = breed
         self.name = name
 
-sam = Dog('Lab','Sam')
+sam = Dog1('Lab','Sam')
 
 sam.name
 
@@ -230,18 +230,18 @@ class Animal():
         print "Eating"
 
 
-class Dog(Animal):
+class Dog2(Animal):
     def __init__(self):
         Animal.__init__(self)
-        print "Dog created"
+        print "Dog2 created"
 
     def whoAmI(self):
-        print "Dog"
+        print "Dog2"
 
     def bark(self):
         print "Woof!"
 
-d = Dog()
+d = Dog2()
 d.whoAmI()
 d.eat()
 d.bark()
