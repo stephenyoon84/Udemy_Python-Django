@@ -111,7 +111,7 @@ class Dog():
 
 sam = Dog(breed='Lab')
 frank = Dog(breed='Huskie')
-
+print(type(sam))
 
 # Lets break down what we have above.The special method
 #
@@ -128,9 +128,9 @@ frank = Dog(breed='Huskie')
 # Now we have created two instances of the Dog class. With two breed types, we
 # can then access these attributes like this:
 
-sam.breed
+print(sam.breed)
 
-frank.breed
+print(frank.breed)
 
 
 # Note how we don't have any parenthesis after breed, this is because it is an
