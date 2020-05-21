@@ -111,6 +111,7 @@ class Dog():
 
 sam = Dog(breed='Lab')
 frank = Dog(breed='Huskie')
+noelle = Dog("Pungsan")
 print(type(sam))
 
 # Lets break down what we have above.The special method
@@ -131,7 +132,7 @@ print(type(sam))
 print(sam.breed)
 
 print(frank.breed)
-
+print(noelle.breed)
 
 # Note how we don't have any parenthesis after breed, this is because it is an
 # attribute and doesn't take any arguments.
@@ -153,7 +154,7 @@ class Dog1():
 
 sam = Dog1('Lab','Sam')
 
-sam.name
+print(sam.name)
 
 
 # Note that the Class Object Attribute is defined outside of any methods in the
