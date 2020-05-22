@@ -233,7 +233,7 @@ class Animal():
 
 class Dog2(Animal):
     def __init__(self):
-        Animal.__init__(self)
+        # Animal.__init__(self)
         print ("Dog2 created")
 
     def whoAmI(self):
