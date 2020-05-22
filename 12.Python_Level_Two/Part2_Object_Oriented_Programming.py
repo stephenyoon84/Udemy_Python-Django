@@ -296,7 +296,6 @@ print (book)
 print (len(book))
 del book
 
-
 #     The __init__(), __str__(), __len__() and the __del__() methods.
 # These special methods are defined by their use of underscores. They allow us
 # to use Python specific functions on objects created through our class.
