@@ -243,9 +243,9 @@ class Dog2(Animal):
         print ("Woof!")
 
 d = Dog2()
-d.whoAmI()
-d.eat()
-d.bark()
+print(d.whoAmI())
+print(d.eat())
+print(d.bark())
 
 
 # In this example, we have two classes: Animal and Dog. The Animal is the base
