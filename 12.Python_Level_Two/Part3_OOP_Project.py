@@ -48,7 +48,8 @@ class Deck:
         self.shuffledCards = shuffle(self.allcards)
 d = Deck()
 print(d.allcards)
-
+d.shuffle()
+print(d.allcards)
 class Hand:
     '''
     This is the Hand class. Each player has a Hand, and can add or remove
