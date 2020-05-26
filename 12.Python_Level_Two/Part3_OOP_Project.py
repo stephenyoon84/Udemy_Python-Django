@@ -49,8 +49,8 @@ class Deck:
 d = Deck()
 print(d.allcards)
 d.shuffle()
-print(d.allcards[:26])
-print(d.allcards[26:])
+print(len(d.allcards[:26]))
+print(len(d.allcards[26:]))
 class Hand:
     '''
     This is the Hand class. Each player has a Hand, and can add or remove
