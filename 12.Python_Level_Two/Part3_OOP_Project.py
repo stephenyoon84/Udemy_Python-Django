@@ -40,7 +40,14 @@ class Deck:
     the players. It will use SUITE and RANKS to create the deck. It should also
     have a method for splitting/cutting the deck in half and Shuffling the deck.
     """
-    pass
+    def __init__(self):
+        print("Creating New Ordered Deck")
+        self.allcards = [(s, r) for s in SUITE for r in RANKS]
+    def shuffle(self):
+        print("Shuffling Deck")
+        self.shuffledCards = shuffle(self.allcards)
+d = Deck()
+print(d.allcards)
 
 class Hand:
     '''
