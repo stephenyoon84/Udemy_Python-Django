@@ -84,6 +84,7 @@ class Player:
             return war_cards
         else:
             for x in range(3):
+                x = x
                 war_cards.append(self.hand.cards.pop(0))
             return war_cards
 
