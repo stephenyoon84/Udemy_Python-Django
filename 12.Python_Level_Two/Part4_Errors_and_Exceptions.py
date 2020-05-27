@@ -81,7 +81,7 @@ else:
 # For example:
 
 try:
-    f = open('testfile','r')
+    f = open('testfile','w')
     f.write('Test write this')
 except:
     # This will check for any exception and then execute this print statement
