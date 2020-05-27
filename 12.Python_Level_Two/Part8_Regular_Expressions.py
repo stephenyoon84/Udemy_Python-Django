@@ -58,7 +58,7 @@ text = 'This is a string with term1, but it does not have the other term.'
 
 match = re.search(pattern,  text)
 
-type(match)
+print(type(match))
 
 
 # This Match object returned by the search() method is more than just a Boolean
@@ -67,10 +67,10 @@ type(match)
 # Let's see the methods we can use on the match object:
 
 # Show start of match
-match.start()
+print(match.start())
 
 # Show end
-match.end()
+print(match.end())
 
 #######################################
 #### Split with regular expressions ###
@@ -85,7 +85,7 @@ split_term = '@'
 phrase = 'What is the domain name of someone with the email: hello@gmail.com'
 
 # Split the phrase
-re.split(split_term,phrase)
+print(re.split(split_term,phrase))
 
 
 # Note how re.split() returns a list with the term to spit on removed and the
