@@ -11,16 +11,16 @@
 ################
 # Uncomment this and comment everything else to run!
 
-import mymodule as mm
-mm.func_in_mymodule()
+# import mymodule as mm
+# mm.func_in_mymodule()
 
 ################
 # Example Three:
 ################
 # Uncomment this and comment everything else to run!
 
-# from mymodule import func_in_mymodule
-# func_in_mymodule()
+from mymodule import func_in_mymodule
+func_in_mymodule()
 
 ################
 # Example Four:
