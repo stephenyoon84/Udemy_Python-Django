@@ -20,4 +20,5 @@ from app_two import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+    path('help/', views.help, name='help')
 ]
